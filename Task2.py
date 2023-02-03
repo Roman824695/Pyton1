@@ -1,8 +1,16 @@
-crans = int(input('Введите общее число журавликов: '))
+s = int(input('Ввидите сумму чисел : '))
+p = int(input('Ввидите произведение чисел : '))
+x = 0
+y = 0
 
-petya = int(crans / 6)
-sergey = petya
-katya = (petya + sergey) * 2
-you = crans - (katya + petya + sergey)
-print(f"{sergey} {katya} {petya} вы сделали {you}")
+while x + y != s or x * y != p:
+  
+  if x < 1000:
+    x += 1
+  else:
+    x = 0
+    y += 1 
 
+print(x, y)
+
+      

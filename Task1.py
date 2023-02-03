@@ -1,9 +1,27 @@
-number = int(input('Введите трехзначное число: '))
-if 999 > number > 99:
-  a = int (number / 100)
-  b = int (number / 10 % 10)
-  c = number % 10
-  sum = a + b + c
-  print(f"Сумма цифр числа {number}  =  {sum}")
+number = int(input('Введите число монеток :  '))
+char = []
+
+for i in range(number): 
+  from random import randint
+  char.append(randint(0, 1))
+print(char)
+
+num1 = 0 
+num2 = 0 
+   
+for i in range(len(char)):
+  if char[i] == 1:
+    num1 += 1
+  else:
+    num2 += 1
+   
+if num1 > num2:
+  print(f"Минииальное число монет которое нужно перевернуть : {num2}")
 else:
-  print('Число не трехзначное')
+  print(f"Минииальное число монет которое нужно перевернуть : {num1}")
+
+
+
+
+
+  
